@@ -16,19 +16,15 @@ class VehicleData:
 
     def export_collection_as_dataframe(self, collection_name: str, database_name: Optional[str] = None) -> pd.DataFrame:
         try:
-            # Determine which database to use
             if database_name is None:
                 db = self.mongo_client.database
             else:
-                # Make sure your MongoDBClient supports this syntax
-                # Otherwise adjust accordingly
                 db = self.mongo_client.client[database_name]
 
             print(f"Using database: {db.name}")
             collection = db[collection_name]
             print(f"Fetching data from collection: {collection_name}")
 
-            # Fetch documents as list
             docs = list(collection.find())
             print(f"Number of documents fetched: {len(docs)}")
 
@@ -37,7 +33,6 @@ class VehicleData:
             if "id" in df.columns.to_list():
                 df = df.drop(columns=['id'], axis=1)
 
-            # Replace "na" strings with np.nan
             df.replace({"na": np.nan}, inplace=True)
 
             print(f"DataFrame shape after cleaning: {df.shape}")

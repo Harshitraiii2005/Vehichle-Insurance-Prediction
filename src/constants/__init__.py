@@ -2,9 +2,9 @@ import os
 from datetime import date
 
 # For MongoDB connection
-DATABASE_NAME = "Veichle"
-COLLECTION_NAME = "Veichle-Data"
-MONGODB_URL=  "mongodb+srv://harshitrai:dYC1MSTn0GYescVJ@cluster0.xn71b7k.mongodb.net/Veichle?retryWrites=true&w=majority"
+DATABASE_NAME = "" # Set your MongoDB database name here
+COLLECTION_NAME = "" # Set your MongoDB collection name here
+MONGODB_URL=  "" # Set your MongoDB URL here
 
 
 PIPELINE_NAME: str = ""
