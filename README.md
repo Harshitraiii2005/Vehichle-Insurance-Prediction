@@ -7,6 +7,7 @@ Welcome to this MLOps project built to impress recruiters and showcase real-worl
 📁 Project Structure & Setup
 
 🔧 Step 1: Project Template
+
 Run the project initializer:
 
 bash
@@ -14,18 +15,19 @@ Copy
 Edit
 python template.py
 📦 Step 2: Package Management
+
 Ensure local imports work properly:
 
 setup.py
 
 pyproject.toml
 
-📘 Need help? See crashcourse.txt for a quick guide.
 
 🐍 Step 3: Virtual Environment
 
 
 <details> <summary>🧪 Bash</summary>
+  
 bash
 Copy
 Edit
@@ -34,6 +36,7 @@ conda activate vehicle
 pip install -r requirements.txt
 pip list
 </details> <details> <summary>🧪 PowerShell</summary>
+  
 powershell
 Copy
 Edit
@@ -43,7 +46,9 @@ pip install -r requirements.txt
 pip list
 </details>
 📊 MongoDB Setup & Data Management
+
 🌐 Step 4: MongoDB Atlas
+
 
 
 Create a free M0 cluster at MongoDB Atlas
