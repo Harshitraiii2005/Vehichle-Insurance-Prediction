@@ -2,9 +2,6 @@ import boto3
 import os
 from src.constants import AWS_SECRET_ACCESS_KEY_ENV_KEY, AWS_ACCESS_KEY_ID_ENV_KEY, REGION_NAME
 
-# Optional: Enable dotenv if needed
-# from dotenv import load_dotenv
-# load_dotenv()
 
 class S3Client:
     s3_client = None
