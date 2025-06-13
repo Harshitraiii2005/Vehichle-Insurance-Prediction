@@ -296,15 +296,30 @@ http://<your-public-ip>:5080
 📦 Docker + FastAPI – Easy containerized API deployment
 
 🎯 Project Workflow Summary
+
+
 text
+
+
 Copy
+
+
 Edit
+
+
 Data Ingestion ➝ Data Validation ➝ Data Transformation ➝
 Model Training ➝ Model Evaluation ➝ Model Deployment ➝
 CI/CD (GitHub Actions + Docker + AWS EC2 & ECR)
+
+
+
 💬 Connect
+
 Found this useful?
+
 ⭐ Star the repo
+
 🐛 Raise an issue
+
 💬 Connect for suggestions or contributions
 
