@@ -2,8 +2,8 @@ import os
 from datetime import date
 
 # For MongoDB connection
-DATABASE_NAME = "" # Set your MongoDB database name here
-COLLECTION_NAME = "" # Set your MongoDB collection name here
+DATABASE_NAME = "Vehicle" # Set your MongoDB database name here
+COLLECTION_NAME = "Vehicle-Data" # Set your MongoDB collection name here
 MONGODB_URL=  "" # Set your MongoDB URL here
 
 
@@ -24,13 +24,14 @@ SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")
 
 AWS_ACCESS_KEY_ID_ENV_KEY = "AWS_ACCESS_KEY_ID"
 AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY"
-REGION_NAME = "ap-south-1"  
+REGION_NAME = "ap-south-1"  # or your actual AWS region
+
 
 
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
 """
-DATA_INGESTION_COLLECTION_NAME: str = "Veichle-Data"
+DATA_INGESTION_COLLECTION_NAME: str = "Vehicle-Data"
 DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 DATA_INGESTION_INGESTED_DIR: str = "ingested"
@@ -68,7 +69,7 @@ MIN_SAMPLES_SPLIT_RANDOM_STATE: int = 101
 MODEL Evaluation related constants
 """
 MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
-MODEL_BUCKET_NAME = "my-modelmlopsproj"
+MODEL_BUCKET_NAME = "modelmlopsproj"
 MODEL_PUSHER_S3_KEY = "model-registry"
 
 
